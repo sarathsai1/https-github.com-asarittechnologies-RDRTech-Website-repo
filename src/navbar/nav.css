@@ -1,0 +1,200 @@
+.nav-brand {
+    max-width: 100px;
+    margin: 0 ;
+    padding: 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav-brand-logo {
+    width: 90px;
+    font-weight: bold;
+    color: #56c083;
+
+}
+
+.header-nav-bar-container {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.489); 
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px;
+    position: fixed;
+    top: 10px;
+    left: 80px;
+    backdrop-filter: blur(50%);
+}
+
+.nav-elements-home::after{
+    /* content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: 0.5s; */
+     content:"";
+    pointer-events:none;
+    bottom: -2px;
+    left:0%;
+    position: absolute;
+    width:0%;
+    height:2px;
+    background-color: gold;
+    transition-timing-function:cubic-bezier(0.25,0.8,0.25,1);
+    transition-duration:400ms;
+    transition-property:width,left; 
+
+
+ }
+.nav-elements-home:focus,.nav-elements-home:hover{
+    color: f6f4f7;
+}
+.nav-elements-home:focus:after,.nav-elements-home:hover:after{
+    width:100%;
+    left:0%;
+}
+.nav-elements-home{
+    margin:0.5rem;
+    padding: 5px;
+     /* text-shadow: 1px 1px 2px grey;  */
+    font-size:18px;
+    font-weight:800;
+    cursor:pointer;
+    position:relative;
+    border:none;
+    transition-timing-function: cubic-bezier(0.25,0.8,0.25,1);
+    transition-duration: 400ms;
+    transition-property: color;
+
+} 
+
+
+
+
+
+
+
+@media (max-width:800px) {
+
+    .nav-elements {
+        position: absolute;
+        text-align: justify;
+        right: 0px;
+        top: 80px;
+        background-color: #f5f8f6b5;
+        width: 100%;
+        text-align: center;
+        height: calc(100vh-60px);
+        transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        overflow: hidden;
+
+        border-radius: 5px;
+    }
+
+    .nav-brand-logo {
+        width: 100px;
+        font-weight: bold;
+        color: #56c083;
+
+        text-align: center;
+    }
+
+    /* .header-nav-bar-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 1px 2px 5px;
+        position: fixed;
+        top: 10px;
+        left: 0px;
+        backdrop-filter: blur(20%);
+    } */
+
+    .header-nav-bar-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 1px 2px 5px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        backdrop-filter: blur(20%);
+    }
+    .nav-elements-home{
+        margin:0px;
+        padding: 10px;
+         /* text-shadow: 1px 1px 2px grey;  */
+        font-size:18px;
+        font-weight:800;
+        cursor:pointer;
+        position:relative;
+        border:none;
+        transition-timing-function: cubic-bezier(0.25,0.8,0.25,1);
+        transition-duration: 400ms;
+        transition-property: color;
+    
+    } 
+
+}
+
+@media (max-width:600px) {
+    .menu-icon {
+        display: block;
+        cursor: progress;
+            
+    }
+
+    .nav-elements {
+        position: absolute;
+        text-align: justify;
+        right: 0px;
+        top: 80px;
+        background-color: rgb(246, 251, 251);
+        width: 100%;
+        text-align: center;
+        height: calc(100vh-60px);
+        transition: all 0.3s ease-in-out;
+
+
+        border-radius: 5px;
+    }
+
+    .nav-elements-home Nav.link {
+        padding: 10px;
+        font-family: sans-serif;
+        font-family: sans-serif;
+    }
+
+    .header-nav-bar-container {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 1px 2px 5px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        backdrop-filter: blur(20%);
+    }
+
+
+
+
+}

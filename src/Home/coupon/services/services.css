@@ -1,0 +1,45 @@
+.card-img-top {
+    font-size: 10px;
+    text-align: center;
+
+    height: 100px !important;
+    width: 100px !important;
+    margin: auto;
+    position: relative;
+    top: -45px;
+
+    color: rgb(14, 14, 14);
+}
+
+.card {
+    border: 0px solid black;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 50px !important;
+    padding: 10px;
+    text-align: center;
+}
+
+.card:hover .bi {
+    color: black;
+    background-color: red;
+}
+
+.card-body {
+    margin-top: -30px;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+.card-text{
+    text-align: justify;
+}
+.rsi{
+    border-bottom: 1px solid #56c083;
+   box-sizing: content-box;
+  
+}

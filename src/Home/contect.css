@@ -1,0 +1,30 @@
+.contect-container{
+    
+    color: black;
+    font-family: sans-serif;
+    padding-top: 60px;
+}
+.contect_from .from-control{
+    padding: 1.375rem .75rem;
+    line-height: 1.5;
+    color: white;
+    background-color:azure;
+    border-radius: 0!important;
+    border: 5px solid black;
+}
+.contect_from input.from-control{
+    margin-bottom: 2em;
+    height: calc(2.5em+ .75rem +2px);
+}
+.btn-ac_btn:hover{
+
+font-size: 20px;
+}
+.btn-ac_btn{
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color:azure;
+    margin-bottom: 20px;
+}
